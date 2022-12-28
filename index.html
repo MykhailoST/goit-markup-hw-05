@@ -50,7 +50,7 @@
            <section class="hero overley">
                 <div class="container">
                     <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                    <button type="button" class="button">Замовити послугу</button>
+                    <button type="button" class="button" data-modal-open>Замовити послугу</button>
                 </div>
             </section>
             
@@ -85,9 +85,30 @@
                 <div class="container">
                     <h2 class="picture">Чим ми займаємося</h2>
                         <ul class="card-set">
-                            <li class="card"><img src="./images/img1.jpg" alt="Верстка сайту" width="370"></li>
-                            <li class="card"><img src="./images/img2.jpg" alt="Налаштування для мобільних телефонів" width="370"></li>
-                            <li class="card"><img src="./images/img3.jpg" alt="Підбір кольорів" width="370"></li>
+                            <li class="card">
+                                <div class="thumb">
+                                    <img src="./images/img1.jpg" alt="Верстка сайту" width="370">
+                                        <div class="product-actions">
+                                            <p>ДЕКСТОПНІ ДОДАТКИ</p>
+                                        </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="thumb">
+                                    <img src="./images/img2.jpg" alt="Налаштування для мобільних телефонів" width="370">
+                                        <div class="product-actions">
+                                            <p>МОБІЛЬНІ ДОДАТКИ</p>
+                                        </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <img src="./images/img3.jpg" alt="Підбір кольорів" width="370">
+                                <div class="thumb">
+                                        <div class="product-actions">
+                                            <p>МОБІЛЬНІ ДОДАТКИ</p>
+                                        </div>
+                                </div>
+                            </li>
                         </ul>
                 </div>
             </section>
@@ -340,6 +361,16 @@
        
     </footer>
 
-    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+         <button class="close" data-modal-close>
+            <svg class="icon-close">
+                <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+         </button>   
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
